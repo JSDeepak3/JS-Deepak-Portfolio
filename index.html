@@ -6,62 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    
     <title>Personal Portfolio</title>
 </head>
+<script>
+const menuBtn = document.getElementById("menu-btn");
+const navbar = document.getElementById("navbar");
+
+menuBtn.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+});
+
+document.querySelectorAll("#navbar a").forEach(link => {
+    link.addEventListener("click", () => {
+        navbar.classList.remove("active");
+    });
+});
+</script>
+
+<script>
+const menuBtn = document.getElementById("menu-btn");
+const navbar = document.getElementById("navbar");
+
+menuBtn.onclick = () => {
+    navbar.classList.toggle("active");
+};
+</script>
 
 <body>
     <header>
-        <div class="site-header">
-            <a href="#" class="logo">JS Deepak</a>
+        <header>
+    <div class="site-header">
+        <a href="#" class="logo">JS Deepak</a>
 
-            <nav>
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#communication">Communication</a>
-                <a href="#achievements">Achievements</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
+        <i class="fa-solid fa-bars menu-btn" id="menu-btn"></i>
+        
+        <nav id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#communication">Communication</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
     </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="myself.jpeg" alt="Deepak">
-        </div>
-        <div class="home-content">
-            <h1>Hi, I'm <span>Deepak</span></h1>
-            <p class="typing-text muted">Data Analyst • Business Analyst • Python Developer • Researcher</p>
-            <p class="muted">I build data-driven insights and dashboards, manage volunteer programs, and lead campus events. Skilled in Python, Power BI, Tableau, Excel, and business analysis.</p>
-            <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
-                <a href="#contact" class="cta">Contact Me</a>
-                
-            </div>
+    <section class="home" id="home">
 
-        <div class="home-buttons">
+    <div class="home-img">
+        <img src="myself.jpeg" alt="Deepak">
+    </div>
+
+    <div class="home-content">
+
+        <h1>JS <span>Deepak</span></h1>
+
+        <p class="typing-text">
+            Data Analyst • Business Analyst • Python Developer
+        </p>
+
+        <p class="hero-desc">
+            Passionate about analytics, business intelligence, research,
+            finance and technology. I build dashboards, analyze data and
+            create impactful solutions through technology.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="Resume1.pdf" download class="resume-btn">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Resume
+            </a>
+            
+
+            <a href="#contact" class="cta">
+                Contact Me
+            </a>
+
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/js-deepak-59b44a217">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:jsdeepak1245@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://wa.me/917569755048">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+             
 
    
     
 
-    <a href="Resume1.pdf"
-       download
-       class="resume-btn">
-       <i class="fa-solid fa-file-arrow-down"></i>
-       Resume
-    </a>
-
     
 
-</div>
-            <div class="social-icons" style="margin-top:18px">
-                <a href="https://www.linkedin.com/in/js-deepak-59b44a217" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:your.email@example.com" target="_blank" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://wa.me/919876543210" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-        </div>
-    </section>
+
     <section id="about" class="about">
         <div class="section-title">
             <h2>About</h2>
