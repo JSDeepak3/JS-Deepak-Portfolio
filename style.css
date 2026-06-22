@@ -1198,3 +1198,11 @@ span{
     gap: 45px;px;
     margin: top 50px;px;
 }
+nav{
+    right:-100%;
+    transition:0.4s;
+}
+
+nav.active{
+    right:0;
+}
