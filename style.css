@@ -932,3 +932,26 @@ span{
 /* end of stylesheet */
 
 
+.home-buttons{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.resume-btn,
+.project-btn{
+    padding:12px 25px;
+    border:2px solid #b74b4b;
+    border-radius:30px;
+    color:white;
+    font-size:1.6rem;
+    transition:0.3s;
+}
+
+.resume-btn:hover,
+.project-btn:hover{
+    background:#b74b4b;
+    color:black;
+    box-shadow:0 0 15px #b74b4b;
+}
